@@ -3,28 +3,26 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Политика конфиденциальности — Ритм смен</title>
+<title>Политика конфиденциальности — Ритм смен (Shift Rhythm)</title>
 <style>
   :root { --bg:#ffffff; --text:#1c1f26; --muted:#5b6270; --line:#e3e6ec; --accent:#c0392b; }
   @media (prefers-color-scheme: dark) { :root { --bg:#14161b; --text:#eceef2; --muted:#a3a9b6; --line:#2a2e37; --accent:#ff7a6b; } }
   body { margin:0; background:var(--bg); color:var(--text); font:16px/1.6 -apple-system,"Segoe UI",Roboto,Arial,sans-serif; }
-  main { max-width:760px; margin:0 auto; padding:32px 20px 64px; }
+  main { max-width:780px; margin:0 auto; padding:32px 20px 64px; }
   h1 { font-size:1.7rem; margin:0 0 4px; }
-  h2 { font-size:1.2rem; margin:32px 0 8px; padding-top:16px; border-top:1px solid var(--line); }
+  h2 { font-size:1.2rem; margin:30px 0 8px; padding-top:16px; border-top:1px solid var(--line); }
   p, li { margin:8px 0; }
   .muted { color:var(--muted); font-size:.92rem; }
-  a { color:var(--accent); }
   .lang { margin:12px 0 24px; }
-</style>
-</head>
+  a { color:var(--accent); }
+</style></head>
 <body>
 <main>
-
 <div class="lang muted"><a href="#ru">Русский</a> · <a href="#en">English</a></div>
 
-<section id="ru">
+<section id="ru" lang="ru">
 <h1>Политика конфиденциальности</h1>
-<p class="muted">Приложение «Ритм смен» (Android, com.ritm.shifts). Автор и правообладатель: Игорь Ушаков. Действует с 9 ноября 2026 года.</p>
+<p class="muted">Приложение «Ритм смен» (английское название Shift Rhythm; Android, com.ritm.shifts). Автор и правообладатель: Игорь Ушаков. Действует с 9 ноября 2026 года.</p>
 
 <p>Приложение «Ритм смен» помогает вести график смен, заметки и задачи. Ниже коротко и прямо сказано, какие данные оно использует и куда они попадают. Главное: <strong>у приложения нет собственных серверов, оно не собирает аналитику, не показывает рекламу и не передаёт ваши данные нам или третьим лицам</strong>.</p>
 
@@ -72,54 +70,58 @@
 <p>Вопросы и просьбы по данным: <a href="mailto:ritm-smen@googlegroups.com">ritm-smen@googlegroups.com</a>.</p>
 </section>
 
-<section id="en">
+<section id="en" lang="en">
 <h1>Privacy Policy</h1>
-<p class="muted">The app "Ritm smen" (Android, com.ritm.shifts). Author and rights holder: Igor Ushakov. In force from 9 November 2026.</p>
+<p class="muted">Shift Rhythm (Russian name: «Ритм смен») — an Android app, package com.ritm.shifts. Author and rights holder: Igor Ushakov. In force from 9 November 2026. Home page: <a href="https://ritm-smen.github.io/">https://ritm-smen.github.io/</a></p>
 
-<p>"Ritm smen" helps to keep a shift schedule, notes and tasks. This page says plainly what data the app uses and where it goes. The main point: <strong>the app has no servers of its own, collects no analytics, shows no advertising and does not send your data to us or to third parties</strong>.</p>
+<p><strong>Shift Rhythm</strong> helps people who work in shifts to keep a schedule, to count hours and pay, and to keep notes and tasks. This policy says what data the app uses and where it goes. In short: <strong>the app has no servers of its own, collects no analytics, shows no advertising, and does not send your data to the author or to third parties</strong>. The data stay on your phone.</p>
 
-<h2>What is stored</h2>
-<p>Everything you enter in the app is kept only in the memory of your phone: kinds of shifts and the schedule, manual changes of days, notes and tasks, the settings (holidays, pay, appearance) and the picture you chose for the background. Deleting the app deletes this data too.</p>
+<h2>1. Data the app keeps on your phone</h2>
+<p>Everything you enter in the app is kept only in the private memory of your phone: kinds of shifts and the schedule, manual changes of days, notes and tasks, settings (holidays, pay, appearance) and the picture you may choose for the background. Deleting the app deletes this data too.</p>
 
-<h2>Signing in with Google or Yandex (optional)</h2>
-<p>The sign-in is only for syncing between your own phones and is not required. If you sign in:</p>
+<h2>2. Google user data (optional sign-in)</h2>
+<p>Signing in is optional and only serves to sync the app's data between your own phones. If you sign in with Google, the app accesses:</p>
 <ul>
-  <li>the app keeps in your Drive (Google Drive or Yandex Disk) one file, <code>ritm-smen.json</code>, with your data. The app has no access to other files of the Drive;</li>
-  <li>from your account the app takes only the e-mail address (the login, for Yandex) and the profile photo, to show which account you are signed in with. They are kept only on your phone and are sent nowhere; the app reads no other data of the profile;</li>
-  <li>the access keys to the Drive are kept only on your phone. You can sign out in the app and withdraw the access in the settings of your Google or Yandex account. You can delete the file in the Drive yourself at any time.</li>
+  <li><strong>One file in your Google Drive</strong>: <code>ritm-smen.json</code>, created by the app. The app asks for the Drive scope <code>https://www.googleapis.com/auth/drive.file</code>, which gives access only to files that the app itself created, never to your other files.</li>
+  <li><strong>Basic information about your Google Account</strong> (scopes <code>openid</code> and <code>profile</code>): the profile photo and the e-mail address of the account.</li>
 </ul>
+<p><strong>How the data are used.</strong> The Drive file contains your own app data (schedule, notes, tasks, settings) and is read and written only to keep these data the same on your phones. The profile photo and the e-mail address are used only to show you, in the app, which account is signed in.</p>
+<p><strong>Sharing.</strong> The app does not sell, share or transfer Google user data to anyone. The author has no servers and does not receive these data. There is no advertising and no analytics. No person reads the data.</p>
+<p><strong>Storage and protection.</strong> The profile photo, the e-mail address and the access keys are stored only in the private storage of the app on your phone, and the access keys are excluded from the Android backup and from the transfer to a new phone. All communication with Google goes over HTTPS. The file in your Drive stays in your Drive under the protection of your Google account.</p>
+<p><strong>Retention and deletion.</strong> You can sign out at any time in the app (More → Cloud sync and copies → Sign out); this removes the keys from the phone. You can delete the file <code>ritm-smen.json</code> in your Google Drive yourself, and you can withdraw the access of the app in the settings of your Google Account (Security → Third-party access). Deleting the app deletes everything stored on the phone.</p>
+<p><strong>Google API Services User Data Policy.</strong> The use by the app of information received from Google APIs adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements. The app does not use Google user data for advertising, and does not use Google APIs for any artificial-intelligence features.</p>
+<p>The same applies to the optional sign-in with Yandex: the app keeps one file in the application folder of your Yandex Disk and reads only the login and the profile photo, for the same purposes.</p>
 
-<p>The use by the app of information received from Google APIs adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements. The Google data is used only to show your account and to save and read the one sync file; it is not transferred to others, not used for advertising and not read by humans.</p>
-
-<h2>Permissions of the phone</h2>
+<h2>3. Permissions of the phone</h2>
 <ul>
-  <li><strong>Calendar</strong> (read and write): to show the events of the calendars of the phone and, if you wish, to write your work shifts to a calendar you choose. The calendar data do not leave the phone, except the entries that you yourself sync with your calendar by the means of the phone.</li>
-  <li><strong>Approximate location</strong>: to show the weather forecast. The app rounds the coordinates to tenths of a degree (about ten kilometres) and sends them to the forecast service of the Norwegian Meteorological Institute (MET Norway, api.met.no) only to get the forecast. We do not receive or keep this data. You may refuse the permission; the weather is then not shown.</li>
+  <li><strong>Calendar</strong> (read and write): to show the events of the calendars of the phone and, if you wish, to write your work shifts to a calendar you choose. These data do not leave the phone, except the entries that you yourself sync with your calendar by the means of the phone.</li>
+  <li><strong>Approximate location</strong>: to show the weather forecast. The app rounds the coordinates to tenths of a degree (about ten kilometres) and sends them to the forecast service of the Norwegian Meteorological Institute (MET Norway, api.met.no) only to get the forecast. The author does not receive or keep this data. You may refuse the permission; the weather is then not shown.</li>
   <li><strong>Notifications and exact alarms</strong>: to remind of the start of a shift and of tasks.</li>
   <li><strong>Start when the phone is switched on</strong>: to set the reminders again after a restart.</li>
   <li><strong>Internet</strong>: for the sync through Google or Yandex (if you signed in) and for the weather forecast.</li>
 </ul>
 
-<h2>Android backup</h2>
-<p>If the Android backup is switched on on your phone, the system may copy the data of the app (schedule, notes, tasks, settings) to your Google account by its own rules and bring it back on a new phone. The keys of the sign-in to Google and Yandex do not go into such a copy. We have no access to these copies; you can switch them off in the settings of the phone.</p>
+<h2>4. Android backup</h2>
+<p>If the Android backup is switched on on your phone, the system may copy the data of the app (schedule, notes, tasks, settings) to your Google account by its own rules and bring it back on a new phone. The keys of the sign-in to Google and Yandex do not go into such a copy. The author has no access to these copies; you can switch them off in the settings of the phone.</p>
 
-<h2>Export and report files</h2>
-<p>The reports in PDF and Word and the schedule for external calendars are made on your phone only on your command. Where to send such a file (a messenger, e-mail, a viewer) is up to you, by the means of the phone; the app sends it nowhere.</p>
+<h2>5. Export and report files</h2>
+<p>The reports in PDF and Word and the schedule for external calendars are made on your phone only on your command. Where to send such a file is up to you, by the means of the phone; the app sends it nowhere.</p>
 
-<h2>Keeping and deleting data</h2>
-<p>The data is kept while you use the app. You can delete it: erase the data of the app in the settings of the phone or delete the app (this removes everything on the phone); sign out in the app and delete the file <code>ritm-smen.json</code> in your Drive (Google or Yandex); withdraw the access of the app in the settings of your Google or Yandex account; delete the file with a copy if you saved one. The data that you pass to Google, Yandex and the Norwegian Meteorological Institute is processed by these organisations by their rules and may be kept on servers outside Russia.</p>
-
-<h2>The copy of the data in a file</h2>
+<h2>6. The copy of the data in a file</h2>
 <p>The function "Save a copy in a file" writes your data to a file in the place you chose. What happens to the file afterwards is up to you. The keys of the sign-in to Google and Yandex do not go into the file.</p>
 
-<h2>Children</h2>
+<h2>7. Keeping and deleting data</h2>
+<p>The data are kept while you use the app. You can delete them: erase the data of the app in the settings of the phone or delete the app; sign out in the app and delete the file <code>ritm-smen.json</code> in your Drive; withdraw the access of the app in your account settings; delete the file with a copy if you saved one. The data that you pass to Google, Yandex and MET Norway are processed by these organisations by their own rules and may be kept on servers outside Russia.</p>
+
+<h2>8. Children</h2>
 <p>The app is not aimed at children and does not collect information about age.</p>
 
-<h2>Changes</h2>
+<h2>9. Changes</h2>
 <p>If the app starts to use data in another way, this page will be updated and the date above changed.</p>
 
-<h2>Contact</h2>
+<h2>10. Contact</h2>
 <p>Questions and requests about data: <a href="mailto:ritm-smen@googlegroups.com">ritm-smen@googlegroups.com</a>.</p>
+<p class="muted"><a href="#ru">Русская версия выше</a></p>
 </section>
 
 </main>
