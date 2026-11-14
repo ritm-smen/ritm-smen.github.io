@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Ритм смен (Shift Rhythm) — приложение для графика смен на Android</title>
-<meta name="description" content="Ритм смен — бесплатное приложение для Android для тех, кто работает по сменам: график смен, часы и оплата, заметки и задачи, виджеты.">
+<meta name="description" content="Ритм смен — бесплатное приложение для Android для тех, кто работает по сменам: график смен, будильник по графику, часы и оплата, заметки и задачи, виджеты, защита кодом и шифрованная синхронизация.">
 <style>
   :root { --bg:#ffffff; --text:#1c1f26; --muted:#5b6270; --line:#e3e6ec; --accent:#c0392b; }
   @media (prefers-color-scheme: dark) { :root { --bg:#14161b; --text:#eceef2; --muted:#a3a9b6; --line:#2a2e37; --accent:#ff7a6b; } }
@@ -37,11 +37,15 @@
   <li>График смен: виды смен со своим временем и цветом, готовые циклы (2/2, 3/3, 5/2 и другие) и свой цикл.</li>
   <li>Календарь с праздниками России, профессиональными и другими, которые выбирает пользователь.</li>
   <li>Отчёт по сменам, часам и оплате за любой период с экспортом в PDF и Word.</li>
-  <li>Напоминания о начале смены, заметки, задачи, события из календарей телефона, виджеты на рабочий стол и прогноз погоды.</li>
+  <li>Будильник по графику: звонит только в рабочие смены в то время, которое вы выбрали для этого вида смены, а в выходные молчит. Напоминания о начале смены.</li>
+  <li>Заметки, задачи, события из календарей телефона, виджеты на рабочий стол и прогноз погоды.</li>
+  <li>Защита приложения своим кодом, отпечатком или лицом.</li>
+  <li>Интерфейс на 26 языках: язык берётся из настроек телефона. Для работы нужен Android 12 или новее.</li>
 </ul>
 
 <h2>Вход через Google или Яндекс (по желанию)</h2>
-<p>Приложение работает без аккаунта. Если пользователь выбирает вход через Google, приложение использует API Google только для одного: хранить один файл <code>ritm-smen.json</code> с данными самого пользователя на его же Google Диске, чтобы данные были одинаковыми на всех его телефонах. Приложение открывает только файл, который создало само (разрешение <code>drive.file</code>). Из аккаунта берутся только фото профиля и адрес почты, чтобы показать, в какой аккаунт выполнен вход; они хранятся только на телефоне. API Google не используются для функций искусственного интеллекта.</p>
+<p>Приложение работает без аккаунта. Если пользователь выбирает вход через Google, приложение использует API Google только для одного: хранить один файл <code>ritm-smen.json</code> с данными самого пользователя на его же Google Диске, чтобы данные были одинаковыми на всех его телефонах. Вход выполняется в браузере телефона на странице Google, пароль приложению не передаётся, секретных ключей в приложении нет. Приложение открывает только файл, который создало само (разрешение <code>drive.file</code>). Из аккаунта берутся только фото профиля и адрес почты, чтобы показать, в какой аккаунт выполнен вход; они хранятся только на телефоне. API Google не используются для функций искусственного интеллекта.</p>
+<p>По желанию файл на Диске можно зашифровать: ключ создаётся на телефоне пользователя, хранится только на его телефонах и на другой телефон передаётся показом QR-кода. Без ключа файл не прочтёт никто, в том числе тот, кто получил доступ к аккаунту.</p>
 
 <h2>Ваши данные</h2>
 <p>У приложения нет собственных серверов, рекламы и аналитики. Данные хранятся на телефоне. Полный текст: <a href="https://ritm-smen.github.io/privacy/">политика конфиденциальности</a>.</p>
@@ -52,8 +56,9 @@
 
 <section id="en" lang="en">
 <h2>English</h2>
-<p><strong>Ритм смен</strong> (English name: <strong>Shift Rhythm</strong>) is a free Android app for people who work in shifts. It helps to keep a work schedule, to count hours and pay, and to keep notes and tasks: kinds of shifts with their own times, ready-made cycles (2/2, 3/3, 5/2 and others), a calendar of holidays, reports with export to PDF and Word, reminders, widgets and a weather forecast.</p>
-<p><strong>Optional sign-in with Google.</strong> The app works without an account. If the user signs in with Google, the app uses Google APIs for one purpose only: to keep a single file, <code>ritm-smen.json</code>, with the user's own schedule data in the user's own Google Drive, so that the data are the same on all the user's phones. The app can open only the file it created (the scope <code>drive.file</code>). It reads only the profile photo and the e-mail address of the account, to show which account is signed in, and keeps them only on the phone. The app does not use Google APIs for artificial-intelligence features.</p>
+<p><strong>Ритм смен</strong> (English name: <strong>Shift Rhythm</strong>) is a free Android app for people who work in shifts. It helps to keep a work schedule, to count hours and pay, and to keep notes and tasks: kinds of shifts with their own times, ready-made cycles (2/2, 3/3, 5/2 and others), a calendar of holidays, reports with export to PDF and Word, an alarm clock that follows the schedule, reminders, widgets, a weather forecast, protection of the app by a code, a fingerprint or a face, and an interface in 26 languages. It needs Android 12 or newer.</p>
+<p><strong>Optional sign-in with Google.</strong> The app works without an account. If the user signs in with Google, the app uses Google APIs for one purpose only: to keep a single file, <code>ritm-smen.json</code>, with the user's own schedule data in the user's own Google Drive, so that the data are the same on all the user's phones. The sign-in is made in the browser of the phone, on the page of Google; the password is never given to the app, and the app holds no client secrets. The app can open only the file it created (the scope <code>drive.file</code>). It reads only the profile photo and the e-mail address of the account, to show which account is signed in, and keeps them only on the phone. The app does not use Google APIs for artificial-intelligence features.</p>
+<p>Optionally the file in the Drive can be encrypted: the key is made on the user's phone, kept only on the user's phones and passed to another phone by showing a QR code. Without the key nobody can read the file, including anyone who gets access to the account.</p>
 <p>The app has no servers of its own, no advertising and no analytics. Read the <a href="https://ritm-smen.github.io/privacy/#en">Privacy Policy</a>. Contact: <a href="mailto:ritm-smen@googlegroups.com">ritm-smen@googlegroups.com</a>.</p>
 </section>
 </main>
