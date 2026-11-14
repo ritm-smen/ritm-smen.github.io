@@ -1,0 +1,10 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.ritm.shifts",
+      "sha256_cert_fingerprints": ["3E:DE:04:25:DB:F8:6B:A1:8A:63:B2:48:31:52:52:21:EE:61:C9:FA:F5:5A:D6:8E:AD:EA:66:39:B9:36:D6:85"]
+    }
+  }
+]
